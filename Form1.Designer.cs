@@ -30,24 +30,36 @@
         {
             button1 = new Button();
             colorDialog1 = new ColorDialog();
+            checkedListBox1 = new CheckedListBox();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
+            button1.BackColor = SystemColors.HotTrack;
             button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.Location = new Point(564, 41);
+            button1.Location = new Point(89, 319);
             button1.Name = "button1";
             button1.Size = new Size(137, 58);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = false;
             // 
+            // checkedListBox1
+            // 
+            checkedListBox1.BackColor = SystemColors.Info;
+            checkedListBox1.ForeColor = Color.Navy;
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Location = new Point(245, 298);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(150, 114);
+            checkedListBox1.TabIndex = 1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1294, 737);
+            Controls.Add(checkedListBox1);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
@@ -59,5 +71,6 @@
 
         private Button button1;
         private ColorDialog colorDialog1;
+        private CheckedListBox checkedListBox1;
     }
 }
